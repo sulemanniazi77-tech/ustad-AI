@@ -866,7 +866,7 @@ Avoid jargon. Make it engaging and easy to memorize.`;
       document.getElementById('loading-text').textContent = isUrdu ? 'مواد تیار ہو رہا ہے...' : 'Generating your content...';
 
       try {
-        const response = await fetch('http://localhost:4000/generate', {
+        const response = await fetch('/generate', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
