@@ -13,6 +13,7 @@ export default async function handler(req, res) {
       body: JSON.stringify(req.body)
     });
     const data = await response.json();
+    console.log(data);
     res.json(data);
   } catch (err) {
     res.status(500).json({ error: err.message });
